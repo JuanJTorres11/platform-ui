@@ -60,7 +60,7 @@ export type GqlClinicalEntity = {
 export type GqlClinicalSubmissionData = {
   id: string;
   version: string;
-  state: 'OPEN' | 'VALID' | 'INVALID' | 'PENDING_APPROVAL';
+  state?: 'OPEN' | 'VALID' | 'INVALID' | 'PENDING_APPROVAL';
   clinicalEntities: GqlClinicalEntity[];
   fileErrors: ClinicalError[];
   __typename: 'ClinicalSubmissionData';
@@ -82,7 +82,7 @@ export type ValidateSubmissionMutationVariables = {
   submissionVersion: string;
 };
 
-export type ApproveSubmissionMutationVariables = {
+export type SignOffSubmissionMutationVariables = {
   programShortName: string;
   submissionVersion: string;
 };
