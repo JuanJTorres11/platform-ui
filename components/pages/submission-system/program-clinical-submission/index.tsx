@@ -290,6 +290,9 @@ export default function ProgramClinicalSubmission() {
       >
         <Container css={containerStyle}>
           <Instruction
+            clinicalTypes={data.clinicalSubmissions.clinicalEntities.map(({ clinicalType }) =>
+              capitalize(clinicalType.split('_').join(' ')),
+            )}
             signOffEnabled={isReadyForSignoff && !mutationDisabled}
             validationEnabled={isReadyForValidation && !hasDataError && !mutationDisabled}
             uploadEnabled={!mutationDisabled}
