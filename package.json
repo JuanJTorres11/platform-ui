@@ -54,7 +54,7 @@
     "dotenv": "^7.0.0",
     "dotenv-webpack": "^1.7.0",
     "emotion-theming": "^10.0.10",
-    "express": "^4.16.4",
+    "express": "^4.20.0",
     "graphql": "^14.2.1",
     "graphql-import": "^0.7.1",
     "isomorphic-fetch": "^2.2.1",
